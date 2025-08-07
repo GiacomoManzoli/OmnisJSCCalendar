@@ -1,0 +1,31 @@
+[
+	{
+		"name": "$event",
+		"order": 1,
+		"clientexec": true,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "clcik",
+		"order": 2,
+		"clientexec": false,
+		"pvardefs": [
+			{
+				"name": "pModuleName",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	}
+]

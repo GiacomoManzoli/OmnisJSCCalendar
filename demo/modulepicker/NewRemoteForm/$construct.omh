@@ -1,0 +1,15 @@
+# Enter your initialization code here
+
+Do iModuleList.$define()
+Do iModuleList.$cols.$add("id",kInteger,k32bitint)
+Do iModuleList.$cols.$add("group",kCharacter,kSimplechar)
+Do iModuleList.$cols.$add("name",kCharacter,kSimplechar)
+
+
+Do iModuleList.$add(1,"Preventivazione","Dati generali")
+Do iModuleList.$add(2,"Preventivazione","Elenco Prezzi")
+Do iModuleList.$add(3,"Preventivazione","Computi")
+
+Do iModuleList.$add(4,"Consuntivazione","Libretti")
+Do iModuleList.$add(5,"Consuntivazione","S.A.L.")
+Do iModuleList.$add(6,"Consuntivazione","Giornale lavori")
