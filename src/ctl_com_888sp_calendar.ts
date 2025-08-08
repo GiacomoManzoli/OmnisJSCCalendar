@@ -170,8 +170,10 @@ export class ctrl_com_888sp_calendar extends ctrl_base {
             //
             onMonthChange: (newDate) => {
                 const month = newDate.getMonth() + 1
+                const year = newDate.getFullYear()
                 this.events.triggerEvent(EVENTS.evMonthChanged, {
                     pMonth: month,
+                    pYear: year
                 })
             },
         })
