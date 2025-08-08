@@ -107,13 +107,14 @@ export class Calendar {
         this.renderCalendar(this.selectedDate)
     }
 
-        /**
-     * Imposta lo stato per la data specificata
-     * @param d Data da impostare lo stato
-     * @param state Stato da impostare per la data, se non specificato rimuove lo stato attuale
+    /**
+     * Imposta gli stati per le date specificate.
+     * Attenzione: questa funzione sovrascrive gli stati esistenti.
+     * @param dateStates Array di oggetti con data e stato da impostare
      */
     setDateStates(dateStates: {date: Date, state:string}[]) {
-        console.log("Setting date states:", dateStates)
+        console.debug("Setting date states:", dateStates)
+        this.dayStates = {}
         dateStates.forEach(({date, state}) => {
             const dateKey = formatDateYMD(date) 
             if (state && this.statesMap.has(state)) {
@@ -123,7 +124,7 @@ export class Calendar {
             }
 
         })
-        console.log("Day states after setting:", this.dayStates)
+        console.debug("Day states after setting:", this.dayStates)
         this.renderCalendar(this.selectedDate)
     }
 
@@ -156,7 +157,7 @@ export class Calendar {
         this.selectedDate = d
         this.renderCalendar(this.selectedDate)
 
-        console.log("Current date set to:", this.selectedDate)
+        console.debug("Current date set to:", this.selectedDate)
 
         if (d.getMonth() !== oldMonth || d.getFullYear() !== oldYear) {
             this.triggerOnMonthChanged(d)
@@ -203,7 +204,7 @@ export class Calendar {
      * @param date Data corrente da visualizzare nel calendario
      */
     private renderCalendar(date: Date) {
-        console.log("Rendering calendar for date:", date)
+        console.debug("Rendering calendar for date:", date)
         this.calendarGrid.innerHTML = ""
 
         const year = date.getFullYear()

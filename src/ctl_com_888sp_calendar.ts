@@ -112,7 +112,7 @@ export class ctrl_com_888sp_calendar extends ctrl_base {
                 case PROPERTIES.selecteddate:
                     return false
                 case PROPERTIES.statesDef:
-                    //     console.log("States set to:", propValue)
+                    //     console.debug("States set to:", propValue)
                     if (propValue) {
                         try {
                             const states = JSON.parse(propValue)
@@ -207,7 +207,7 @@ export class ctrl_com_888sp_calendar extends ctrl_base {
      * @returns {character}
      */
     public $setstatelist(DateList) {
-        console.log("Setting state list:", DateList)
+        console.debug("Setting state list:", DateList)
         const datanameList = new omnis_list(DateList)
 
         let stateList = []
