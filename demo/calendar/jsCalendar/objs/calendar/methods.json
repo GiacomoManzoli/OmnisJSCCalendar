@@ -1,0 +1,158 @@
+[
+	{
+		"name": "$event",
+		"order": 1,
+		"clientexec": true,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "date",
+				"order": 2,
+				"type": "kDate",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "dateChar",
+				"order": 1,
+				"type": "kCharacter",
+				"subtype": "kSimplechar",
+				"sublen": 100000000
+			},
+			{
+				"name": "listDate",
+				"order": 3,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lvCostante",
+				"order": 5,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			},
+			{
+				"name": "lvData",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "",
+				"sublen": 1
+			},
+			{
+				"name": "lvDataEnd",
+				"order": 7,
+				"type": "kDate",
+				"subtype": "",
+				"sublen": 1
+			},
+			{
+				"name": "lvDataStart",
+				"order": 6,
+				"type": "kDate",
+				"subtype": "",
+				"sublen": 1
+			}
+		]
+	},
+	{
+		"name": "setstate",
+		"order": 2,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+			{
+				"name": "listDate",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lvCostante",
+				"order": 2,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			},
+			{
+				"name": "lvData",
+				"order": 5,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "lvDataEnd",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			},
+			{
+				"name": "lvDataStart",
+				"order": 3,
+				"type": "kDate",
+				"subtype": "kDatetime",
+				"sublen": 1
+			}
+		]
+	},
+	{
+		"name": "setstate_return",
+		"order": 3,
+		"clientexec": true,
+		"pvardefs": [
+			{
+				"name": "pReturnValue",
+				"order": 1,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+			{
+				"name": "listDate",
+				"order": 2,
+				"type": "kList",
+				"subtype": "",
+				"sublen": 0
+			},
+			{
+				"name": "lvCostante",
+				"order": 3,
+				"type": "kNumber",
+				"subtype": "k0dp",
+				"sublen": 0
+			},
+			{
+				"name": "lvData",
+				"order": 6,
+				"type": "kDate",
+				"subtype": "",
+				"sublen": 1
+			},
+			{
+				"name": "lvDataEnd",
+				"order": 5,
+				"type": "kDate",
+				"subtype": "",
+				"sublen": 1
+			},
+			{
+				"name": "lvDataStart",
+				"order": 4,
+				"type": "kDate",
+				"subtype": "",
+				"sublen": 1
+			}
+		]
+	}
+]

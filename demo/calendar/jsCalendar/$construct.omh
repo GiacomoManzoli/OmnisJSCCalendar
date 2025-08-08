@@ -1,0 +1,20 @@
+# Enter your initialization code here
+Do iListStati.$define()
+Do iListStati.$cols.$add("name",kCharacter,kSimplechar)
+Do iListStati.$cols.$add("color",kCharacter,kSimplechar)
+Do iListStati.$cols.$add("tooltip",kCharacter,kSimplechar)
+
+Do iListStati.$add("holiday-recurring","#001425","Festività periodica")
+Do iListStati.$add("exception","red","Eccezione")
+Do iListStati.$add("holiday","#001425","Festività isolata")
+
+
+Do OJSON.$listtoobjectarray(iListStati,kUniTypeCharacter) Returns statesDef
+
+Calculate $cinst.$objs.calendar.$statesdef as statesDef
+
+
+
+Do iListStatiDate.$define()
+Do iListStatiDate.$cols.$add("date",kCharacter,kSimplechar)
+Do iListStatiDate.$cols.$add("state",kCharacter,kSimplechar)

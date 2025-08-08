@@ -1,0 +1,20 @@
+# Send to trace log aaaa [pEventCode]
+# JavaScript:debugger
+
+On evDateChanged
+	Calculate dateChar as pNewDate
+	# Send to trace log bbb
+	# Calculate dateChar as "2025-08-07"
+	Calculate date as dat(dateChar,"D:y-M-D")
+	
+	Calculate iDate as date
+	
+	
+On evDayHeaderClick
+	Send to trace log cccc
+	Calculate iHeaderClick as pDay
+	Do method setState
+	
+On evMonthChanged
+	Send to trace log ddd
+	Calculate iMonth as con(pMonth,' ',pYear)

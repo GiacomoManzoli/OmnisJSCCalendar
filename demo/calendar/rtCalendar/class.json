@@ -1,0 +1,49 @@
+{
+	"classtype": "kRemoteTask",
+	"omnisversion": "11.1",
+	"omnisbuild": 111037255,
+	"internalversion": 2,
+	"nextident": 1,
+	"tvardefs": [
+
+	],
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+
+	],
+	"properties": {
+		"basehttpresponseheaders": "",
+		"canremotedebugwhenlocked": false,
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componentinfo": {
+
+		},
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2025-08-07 11:44:13",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": false,
+		"htmltemplate": "",
+		"issupercomponent": false,
+		"localtestdata": "",
+		"localtime": true,
+		"maxtime": 0,
+		"maxusers": 0,
+		"moddate": "2025-08-07 15:45:52",
+		"restful": false,
+		"restfulapiname": "",
+		"showascheckedout": false,
+		"stringtable": "",
+		"suspendconditions": "kSuspendConditionNone",
+		"suspendedtimeout": 0,
+		"timeout": 0,
+		"userinfo": "",
+		"vcsrevision": 0,
+		"version": "",
+		"webservice": ""
+	}
+}

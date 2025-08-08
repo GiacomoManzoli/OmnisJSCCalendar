@@ -1,0 +1,56 @@
+{
+	"ident": 1001,
+	"order": 1,
+	"objtype": "kComponent",
+	"componentlib": "jsControls",
+	"componentctrl": "com_888sp_calendar",
+	"properties": {
+		"active": true,
+		"alpha": 255,
+		"backalpha": 255,
+		"backcolor": "kColorDefault",
+		"bordercolor": "kColorDefault",
+		"borderradius": "0",
+		"componentinfo": {
+
+		},
+		"contextmenu": "",
+		"cssclassname": "",
+		"desgroup": 0,
+		"designactive": true,
+		"deslock": false,
+		"disabledefaultcontextmenu": false,
+		"disablesystemfocus": false,
+		"dropmode": "kAcceptNone",
+		"effect": "kJSborderNone",
+		"enabled": true,
+		"events": "evDateChanged,evMonthChanged,evDayHeaderClick",
+		"fieldstyle": "",
+		"font": 1,
+		"hiliteselected": false,
+		"hilitetoday": false,
+		"nexttabobject": "",
+		"objlink": 0,
+		"preventlayoutanimation": false,
+		"removefromtaborder": false,
+		"selecteddate": "",
+		"sidepanel": false,
+		"sidepanelmode": "kSidePanelModeNone",
+		"statesdef": "",
+		"tooltip": "",
+		"userinfo": "",
+		"visible": true
+	},
+	"layout": {
+		"1047": {
+			"left": 19,
+			"top": 10,
+			"width": 318,
+			"height": 311,
+			"dragborder": false,
+			"edgefloat": "kEFnone",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": true
+		}
+	}
+}

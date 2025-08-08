@@ -1,0 +1,2 @@
+On evClick
+	Calculate $cinst.$objs.calendar.$hilitetoday as iCheckHiliteToday

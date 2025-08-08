@@ -1,0 +1,15 @@
+Do listDate.$copydefinition(iListStatiDate)
+Do listDate.$define()
+Do listDate.$cols.$add("date",kCharacter,kSimplechar)
+Do listDate.$cols.$add("state",kCharacter,kSimplechar)
+Calculate lvCostante as kSunday
+
+Calculate lvDataStart as fday(kMonth,dadd(kMonth,-1,#D))
+Calculate lvDataEnd as lday(kMonth,dadd(kMonth,1,#D))
+Calculate lvData as lvDataStart
+Repeat
+	Calculate lvData as nday(lvCostante,lvData)
+	Do listDate.$add(jst(lvData,"D:y-M-D"),"holiday-recurring")
+Until lvData>lvDataEnd
+
+Quit method listDate
